@@ -53,5 +53,11 @@ func main() {
 	fmt.Println(intStack.pop())
 	intStack.printall()
 	fmt.Println("Is Stack Empty: ", intStack.isEmpty())
-
+	stringStack := stack[string]{}
+	stringStack.push("hello")
+	stringStack.push("wolrd")
+	stringStack.push("john")
+	fmt.Println(stringStack.pop())
+	stringStack.printall()
+	fmt.Println("Is Stack Empty: ", stringStack.isEmpty())
 }
