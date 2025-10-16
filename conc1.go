@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"runtime"
 	"sync"
+	"time"
 )
 
 func heavyTask(id int, wg *sync.WaitGroup) {
@@ -12,6 +13,7 @@ func heavyTask(id int, wg *sync.WaitGroup) {
 	for range 100_000_000 {
 
 	}
+	fmt.Println(time.Now())
 	fmt.Printf("Task %d is finished \n", id)
 
 }
